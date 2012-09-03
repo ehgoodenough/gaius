@@ -9,6 +9,9 @@ public class encrypt
 		for(int aee = 0; aee < message.length(); aee++)
 		{
 			int charnum = message.charAt(aee);
+			
+			if(charnum == ' ') {charnum = '#';}
+			
 			System.out.print((char)charnum);
 		}
 	}
