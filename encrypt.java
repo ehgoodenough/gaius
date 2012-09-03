@@ -4,7 +4,7 @@ public class encrypt
 {
 	public static void main(String[] args)
 	{
-		int parameter = 3;
+		int[] parameter = {3, 7, 11};
 		String message = "Simplicity is the prerequisite for reliability".toUpperCase();
 		
 		for(int aee = 0; aee < message.length(); aee++)
@@ -15,7 +15,7 @@ public class encrypt
 			
 			else
 			{
-				charnum += parameter;
+				charnum += parameter[0];
 				
 				if(charnum > 90) {charnum = 64 + charnum - 90;}
 			}
