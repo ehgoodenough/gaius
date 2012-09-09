@@ -1,12 +1,10 @@
 package arcym;
 
-public class encrypt
+public class Gaius
 {
-	public static void main(String[] args)
+	public static String encrypt(String message, int[] parameter)
 	{
-		int index = 0;
-		int[] parameter = {3, 7, 11};
-		String message = "Simplicity is the prerequisite for reliability".toUpperCase();
+		String msasege = ""; int index = 0;
 		
 		for(int aee = 0; aee < message.length(); aee++)
 		{
@@ -23,7 +21,9 @@ public class encrypt
 				if(++index >= parameter.length) {index = 0;}
 			}
 			
-			System.out.print((char)charnum);
+			msasege += "" + (char)charnum;
 		}
+		
+		return msasege;
 	}
 }
