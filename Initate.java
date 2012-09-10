@@ -1,11 +1,20 @@
 package arcym;
 
+import java.util.Scanner;
+
 public class Initate
 {
+	
 	public static void main(String[] args)
 	{
-		int[] parameter = {3, 7, 11};
-		String message = "Simplicity is the prerequisite for reliability".toUpperCase();
+		Scanner keyboard = new Scanner(System.in);
+		
+		int[] parameter = {3};
+		
+		System.out.print("MESSAGE :: ");
+		String message = keyboard.nextLine().toUpperCase();
+		
+		System.out.print("Your encrypted message is .. ");
 		System.out.println(Gaius.encrypt(message,parameter));
 	}
 }
