@@ -4,7 +4,7 @@ public class Gaius
 {
 	public static String encrypt(String givenMessage, int[] givenParameters)
 	{
-		return crypt(givenMessage, givenParameters);
+		return crypt(givenMessage.toUpperCase(), givenParameters);
 	}
 	
 	public static String decrypt(String givenMessage, int[] givenParameters)
@@ -12,7 +12,7 @@ public class Gaius
 		int[] inversedParameters = givenParameters;
 		for(int oee = 0; oee < inversedParameters.length; oee++)
 		{inversedParameters[oee] = inversedParameters[oee] * -1;}
-		return crypt(givenMessage, inversedParameters);
+		return crypt(givenMessage.toUpperCase(), inversedParameters);
 	}
 	
 	private static String crypt(String givenMessage, int[] givenParameters)
