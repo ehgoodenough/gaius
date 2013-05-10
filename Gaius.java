@@ -27,7 +27,7 @@ public class Gaius
 				characterValue += givenParameters[currentParameter];
 				if(characterValue > 90) {characterValue = 64 + characterValue - 90;}
 				if(characterValue < 65) {characterValue = 91 + characterValue - 65;}
-				if(++currentParameter >= givenParameter.length) {currentParameter = 0;}
+				if(++currentParameter >= givenParameters.length) {currentParameter = 0;}
 			}
 			
 			processedMessage += Character.toString((char)characterValue);
