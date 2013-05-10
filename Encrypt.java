@@ -1,7 +1,7 @@
 import java.util.Random;
 import java.util.Scanner;
 
-public class Initate
+public class Encrypt
 {
 	private static Scanner keyboard = new Scanner(System.in);
 	private static Random randomness = new Random(8432052);
