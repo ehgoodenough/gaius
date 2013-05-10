@@ -1,5 +1,3 @@
-package arcym;
-
 import java.util.Random;
 import java.util.Scanner;
 

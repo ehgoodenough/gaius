@@ -1,5 +1,3 @@
-package arcym;
-
 public class Gaius
 {
 	public static String encrypt(String givenMessage, int[] givenParameters)
