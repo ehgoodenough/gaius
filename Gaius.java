@@ -7,10 +7,10 @@ public class Gaius
 	
 	public static String decrypt(String givenMessage, int[] givenParameters)
 	{
-		int[] inversedParameters = givenParameters;
-		for(int oee = 0; oee < inversedParameters.length; oee++)
-		{inversedParameters[oee] = inversedParameters[oee] * -1;}
-		return crypt(givenMessage.toUpperCase(), inversedParameters);
+		for(int i = 0; i < givenParameters.length; i++)
+		{givenParameters[i] = givenParameters[i] * -1;}
+		
+		return crypt(givenMessage.toUpperCase(), givenParameters);
 	}
 	
 	private static String crypt(String givenMessage, int[] givenParameters)
