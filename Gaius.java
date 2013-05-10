@@ -17,8 +17,7 @@ public class Gaius
 		givenMessage = givenMessage.toUpperCase();
 		
 		int currentParameter = 0;
-		String processedMessage = "";
-		
+		String processedMessage = new String();
 		for(int i = 0; i < givenMessage.length(); i++)
 		{
 			int characterValue = givenMessage.charAt(i);
