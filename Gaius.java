@@ -16,17 +16,19 @@ public class Gaius
 	{
 		givenMessage = givenMessage.toUpperCase();
 		
-		String processedMessage = ""; int currentParameters = 0;
-		for(int aee = 0; aee < givenMessage.length(); aee++)
+		int currentParameter = 0;
+		String processedMessage = "";
+		
+		for(int i = 0; i < givenMessage.length(); i++)
 		{
-			int characterValue = givenMessage.charAt(aee);
+			int characterValue = givenMessage.charAt(i);
 			if(characterValue == ' ') {characterValue = '#';}
 			else if(Character.isLetter(characterValue))
 			{
-				characterValue += givenParameters[currentParameters];
+				characterValue += givenParameters[currentParameter];
 				if(characterValue > 90) {characterValue = 64 + characterValue - 90;}
 				if(characterValue < 65) {characterValue = 91 + characterValue - 65;}
-				if(++currentParameters >= givenParameters.length) {currentParameters = 0;}
+				if(++currentParameter >= givenParameter.length) {currentParameter = 0;}
 			}
 			
 			processedMessage += Character.toString((char)characterValue);
