@@ -1,4 +1,4 @@
-Encrypts your messages using caesar ciphers with both singledigit and mutlidigit parameters. Although there are many more advanced techniques in crytography, the caesar ciphers can still secure your messages fairly well.
+Encrypts your messages using caesar ciphers with both singledigit and mutlidigit parameters. Although there are definitely many more signficantly advanced techniques in crytography, the caesar ciphers can still secure your messages fairly well.
 
 When the application is finished, it should feature both encryption and decryption in either singledigit and multidigit parameters, all implemented in a userfriendly interface.
 
