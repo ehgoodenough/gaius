@@ -8,13 +8,14 @@ public class Encrypt
 	
 	public static void main(String[] args)
 	{
+		System.out.println("Welcome to GaiusEncryption!");
+		
 		while(true)
 		{
-			System.out.println("Welcome to GaiusEncryption!");
 			System.out.println("Please select an option:");
 			System.out.println("[1] Encrypt a message");
 			System.out.println("[2] Decrypt a message");
-			System.out.print("OPTION#");
+			System.out.print(">>> ");
 			
 			int option = keyboard.nextLine().charAt(0) - 48;
 			
