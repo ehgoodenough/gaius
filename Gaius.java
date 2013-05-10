@@ -2,19 +2,20 @@ public class Gaius
 {
 	public static String encrypt(String givenMessage, int[] givenParameters)
 	{
-		return crypt(givenMessage.toUpperCase(), givenParameters);
+		return crypt(givenMessage, givenParameters);
 	}
 	
 	public static String decrypt(String givenMessage, int[] givenParameters)
 	{
 		for(int i = 0; i < givenParameters.length; i++)
 		{givenParameters[i] = givenParameters[i] * -1;}
-		
-		return crypt(givenMessage.toUpperCase(), givenParameters);
+		return crypt(givenMessage, givenParameters);
 	}
 	
 	private static String crypt(String givenMessage, int[] givenParameters)
 	{
+		givenMessage = givenMessage.toUpperCase();
+		
 		String processedMessage = ""; int currentParameters = 0;
 		for(int aee = 0; aee < givenMessage.length(); aee++)
 		{
