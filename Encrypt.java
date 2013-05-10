@@ -36,7 +36,20 @@ public class Encrypt
 	{
 		System.out.print("Type the message you want to encrypt: ");
 		String message = keyboard.nextLine();
-		int[] parameter = {randomness.nextInt(24)};
+		
+		System.out.print("Type the key you use to encrypt: ");
+		int[] parameter;
+		if(keyboard.hasNextInt())
+		{
+			parameter = new int[1];
+			parameter[0] = keyboard.nextInt();
+		}
+		else
+		{
+			parameter = new int[1];
+			parameter[0] = randomness.nextInt(24);
+		}
+		
 		System.out.print("Your encrypted message is ");
 		System.out.print(Gaius.encrypt(message,parameter));
 		System.out.print(" with parameters of " + parameter[0]);
