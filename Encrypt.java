@@ -15,18 +15,24 @@ public class Encrypt
 			System.out.println("Please select an option:");
 			System.out.println("[1] Encrypt a message");
 			System.out.println("[2] Decrypt a message");
+			System.out.println("[3] Exit the program");
 			System.out.print(">>> ");
 			
 			int option = keyboard.nextLine().charAt(0) - 48;
 			
 			System.out.println("");
 			
-			if(option == 1) {initiateEncrypt();}
-			else if(option == 2) {initiateDecrypt();}
+			switch(option)
+			{
+			case 1: initiateEncryption(); break;
+			case 2: initiateDecryption(); break;
+			case 3: System.exit(0); break;
+			default: break;
+			}
 		}
 	}
 	
-	private static void initiateEncrypt()
+	private static void initiateEncryption()
 	{
 		System.out.print("Type the message you want to encrypt: ");
 		String message = keyboard.nextLine();
@@ -37,7 +43,7 @@ public class Encrypt
 		System.out.println("."); System.out.println();
 	}
 	
-	private static void initiateDecrypt()
+	private static void initiateDecryption()
 	{
 		System.out.print("Type the message you want to decrypt: ");
 		String message = keyboard.nextLine();
